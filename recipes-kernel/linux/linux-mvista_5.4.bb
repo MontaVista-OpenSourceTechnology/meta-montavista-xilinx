@@ -1,6 +1,6 @@
-MV_KERNEL_BRANCH ?= "mvl-4.19/msd.cgx"
-MV_KERNEL_TREE ?= "git://github.com/MontaVista-OpenSourceTechnology/linux-mvista-2.6.git;protocol=https"
-MV_KERNELCACHE_BRANCH ?= "yocto-4.19"
+MV_KERNEL_BRANCH ?= "mvl-5.4/msd.cgx"
+MV_KERNEL_TREE ?= "git://github.com/MontaVista-OpenSourceTechnology/linux-mvista.git;protocol=https"
+MV_KERNELCACHE_BRANCH ?= "yocto-5.4"
 MV_KERNELCACHE_TREE ?= "git://github.com/MontaVista-OpenSourceTechnology/yocto-kernel-cache;protocol=https"
 
 require recipes-kernel/linux/linux-yocto.inc
@@ -13,7 +13,7 @@ LIC_FILES_CHKSUM = "file://COPYING;md5=bbea815ee2795b2f4230826c0c6b8814"
 
 S = "${WORKDIR}/git"
 
-LINUX_VERSION = "4.19"
+LINUX_VERSION = "5.4"
 KERNEL_VERSION_SANITY_SKIP="1"
 PV = "${LINUX_VERSION}+git${SRCPV}"
 
